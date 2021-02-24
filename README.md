@@ -79,4 +79,10 @@ See below:
     <%= form.label :twitter %>
     <%= form.text_field :twitter, class: "form-control" %>
 
+27) Put the placeholder within the message (changed the form class  to have placeholder). e.g. ,placeholder: "username"
+
+28) Changed the warning message to have a better looking alert by going to bootstrap.com --> components --> Alerts --> selected the one I liked, copy and then put this within a new partial file I named alerts (within the layouts folder).
+Pasted the info from bootstrap and then replaced the initial warning message with <%= notice %>.
+Then within the applications html file, above the yield tag place the partial there. (<%=render = "layouts/alerts"%>). And made this into an if statement to only be shown if required.
+
 ```
