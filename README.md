@@ -71,4 +71,12 @@ Within the header file - type in <%= link_to"WhateverYouWant"%>, foldername_file
 
 25) Similar with buttons, bootstrap.com --> components --> buttons --> take an example of the button. At the bottom of the index page wher you can see the link to other pages, after the link you can add the class of a button and if you then visit the website you can see the button has been displayed in a much better way
 
+26) Forms again is similar except bootstrap.com --> forms.
+To make the changes do this within the friends --> _forms file. An example of a change that I made is:
+I changed the class to mb-3 and added the class: "form-control" too.
+See below:
+<div class="mb-3">
+    <%= form.label :twitter %>
+    <%= form.text_field :twitter, class: "form-control" %>
+
 ```
