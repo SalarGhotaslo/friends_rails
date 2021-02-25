@@ -85,4 +85,5 @@ See below:
 Pasted the info from bootstrap and then replaced the initial warning message with <%= notice %>.
 Then within the applications html file, above the yield tag place the partial there. (<%=render = "layouts/alerts"%>). And made this into an if statement to only be shown if required.
 
+29) May have to delete the other notice alerts on the other pages for it not to be shown twice
 ```
