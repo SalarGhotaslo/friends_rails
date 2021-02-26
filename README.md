@@ -87,3 +87,25 @@ Then within the applications html file, above the yield tag place the partial th
 
 29) May have to delete the other notice alerts on the other pages for it not to be shown twice
 ```
+
+### Devise (user sign up etc)
+
+```
+30) Add a gem file called gem devise then run bundle install
+
+31) Used rails g devise:install
+
+32) Worked through the steps given on the terminal, important to be able to carry on. On step two they add a URL to the dev, may need to do this to production as well
+
+33) Then ran rails g devise user
+
+34) rails db:migrate to migrate the tables and databases and make them live
+
+35) in rails routes we can now check the new routes/paths that have been created
+
+36) To add the links on the navbar go to the apps --> home --> header page, create more in there using the li's. Make sure to use the path prefixes found in in the rails routes to create the new routes. All easy except on the user sign out one you'll need to add ,method: :delete after the class for signing out to work.
+
+37) Then added an if statement to this page where the user can only see certain buttons on the navbar if they are signed in. Did this using <% if user_signed_in?>
+with the links related. Then <% else %> other links. Then <%end %>
+
+```
